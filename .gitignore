@@ -48,7 +48,6 @@ CMakeCache.txt
 CMakeFiles
 CMakeScripts
 Testing
-Makefile
 cmake_install.cmake
 install_manifest.txt
 compile_commands.json
@@ -91,7 +90,6 @@ _deps
 **/install_manifest.txt
 **/CMakeFiles/
 **/CTestTestfile.cmake
-**/Makefile
 **/*.cbp
 **/CMakeScripts
 **/compile_commands.json
