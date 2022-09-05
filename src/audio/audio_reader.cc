@@ -229,7 +229,7 @@ namespace decord {
         // allocate resample buffer
         float** outBuffer;
         int outLinesize = 0;
-        int outNumChannels = av_get_channel_layout_nb_channels(mono ? AV_CH_LAYOUT_MONO : pFrame->channel_layout);
+        int outNumChannels = pFrame->ch_layout.nb_channels;
         numChannels = outNumChannels;
         int outNumSamples = av_rescale_rnd(pFrame->nb_samples,
                                            this->targetSampleRate, pFrame->sample_rate, AV_ROUND_UP);
