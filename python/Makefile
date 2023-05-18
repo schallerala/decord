@@ -1,6 +1,7 @@
 clean:
 	-rm -rf build decord.egg-info dist
-	-rm decord*.whl numpy*.whl
 
 build-wheel:
-	poetry run pip wheel --no-deps .
+	@# https://wheel.readthedocs.io/en/latest/quickstart.html#quickstart
+	poetry run python -m pip install build
+	poetry run python -m build --wheel
